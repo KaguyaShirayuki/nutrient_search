@@ -1,0 +1,1150 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 100%;
+    /* height: 100vh;
+    background: #f7f708; */
+}
+
+header.top-header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/public/images/top_page.png);
+    position: relative;
+}
+
+nav.header-top {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #ffb27d80;
+}
+
+.logo {
+    position: absolute;
+    top: 3%;
+    left: 8%;
+}
+
+.navigation-menu {
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    max-width: 100%;
+}
+
+.recipe_search_btn {
+    position: absolute;
+    top: 4.5%;
+    right: 8%;
+    width: 18%;
+}
+
+.recipe_search_btn p {
+    color: #706d6d;
+    font-weight: bold;
+    background: #C1FBDF;
+    margin-top: 0;
+    padding: 10% 10% 10% 15%;
+    border-radius: 50px;
+    position: relative;
+}
+
+.recipe_search_btn p:before {
+    position: absolute;
+    width: 42%;
+    height: 100%;
+    background: #4FD293;
+    content: "";
+    top: 0%;
+    left: 58%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display:block;
+}
+
+.recipe_search_btn p:after {
+    position: absolute;
+    display: block;
+    content: url(/public/images/search_icon.png);
+    top: 18%;
+    left: 68%;
+}
+
+ul.header_navi {
+    list-style-type: none;
+    padding-left: 0;
+    width: 140%;
+}
+
+ul.header_navi > li {
+    display: inline-block;
+    margin-right: 5%;
+    font-size: 110%;
+    font-weight: bold;    
+}
+
+ul.header_navi > li a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 150%;    
+}
+
+ul.header_navi > li a:hover {
+    color: #F00;
+}
+
+/* ファーストビューコンテンツ */
+.first_view {
+    width: 80%;
+    height: 72vh;
+    position: absolute;
+    top: 24%;
+    left: 10%;
+}
+
+.first_view_content {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 20%;
+    display: flex;
+    /* background: gold; */
+    padding: 1%;
+    justify-content: space-between;
+}
+
+.first_view_left {
+    width: 62%;
+    height: auto;
+    background-color: #FFFCE3;
+    border: 1px solid #ffa100;
+    box-shadow: 0 0 10px 5px #ffa100;
+    border-radius: 20px;
+    /* margin-right: 0%; */
+    padding: 1%;
+}
+
+.first_view_row {
+    background: #ffffff;
+    display: flex;
+    padding: 2%;
+}
+
+.first_view_row:nth-of-type(2) {
+    justify-content: center;
+    background: lightyellow;
+}
+
+.first_view_row > figure {
+    background: #ffffff;
+    width: 100%;
+    /* height: 240px; */
+    border-bottom: 3px solid #543919;
+    margin: 1% 3%;
+}
+
+.first_view_row > figure > img {
+    width: 100%;
+}
+.first_view_row > figure a {
+    text-decoration: none;
+}
+.first_view_row > figure a figcaption {
+    text-align: center; 
+    padding: 3% 0;
+}
+
+.days {
+    background: #ffac57;
+    padding: 3%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 2px 2px #ff6a00;
+    margin: 1% 2%;
+    color: #FFF;
+    height: 100%;
+}
+
+.todays_appel_title {
+    color: #f57213;
+    font-weight: bold;
+    font-size: 155%;
+    padding-top: 2%;
+}
+
+.todays_appel_title p {
+    font-size: 85%;
+    font-weight: normal;
+    color: #000;
+    line-height: 130%;
+}
+.week_recipe_btn {
+    text-align: center;
+    width: 50%;
+    margin: 2% auto 5%;
+    padding: 2%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 3px 2px #ccc;
+}
+
+.week_recipe_btn a { text-decoration: none; }
+
+/* 右サイドコンテンツ */
+.side_page {
+    /* position: absolute; */
+    background: #fff;
+    /* top: -6%; */
+    /* left: 110%; */
+    width: 30%;
+    padding: 2% 1%;
+    border-radius: 20px;
+    /* height: auto; */
+    border: 2px solid #545353;
+    box-shadow: 0 0 10px 5px #796e6e;
+}
+
+.side_page > div {
+    line-height: 0.75rem;
+    height: 100%;
+    /* background: #c9fffc; */
+    margin-top: 4%;
+}
+
+.side_page h2 {
+    text-align: center;
+    /* margin: 0; */
+    font-size: 2rem;
+}
+p.red_ruby {
+    color: #F00;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.ranking_recipe {
+    margin-top: 2%;
+}
+
+.top1 {
+    /* background: #b5ffb5; */
+    padding: 2% 0;
+    margin: 0% 0;
+    height: 15vh;
+    position: relative;
+    border-top: 2px solid gray;
+}
+
+.top1 figure {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    margin-left: 0;
+    width: 100%;
+}
+
+.top1 figure > img {
+    max-width: 45%;
+}
+
+.top1 > figure + p {
+    font-weight: bold;
+    font-size: 1.6rem;
+    position: absolute;
+    top: 41%;
+    left: 60%;
+}
+
+.top1::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 30px;
+    background: silver;
+    top: 48%;
+    left: 93%;
+    clip-path: polygon(20px 50%, 0% 0%, 0% 30px);
+}
+
+.top1:last-of-type {
+    border-bottom: 2px solid gray;
+    /* padding-top: 10%; */
+}
+.top1:last-of-type > figure {
+    margin-bottom: 0;
+}
+
+/* ******************* メインコンテンツ ***************************************** */
+
+#main {
+    max-width: calc(1280px - 20px);
+    background-color: #f0efeb;
+    border-radius: 5px;
+    border: 2px solid #00C314;
+    margin: 5% auto;
+    box-shadow: 0 0 10px 5px #066710;
+}
+
+ /* +++++++++  FEATURE サービスの特徴 ++++++++++ */
+p.title_point {
+    text-align: center;
+    color: #F00;
+    margin-bottom: 0;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+p.title_point span {
+    color: #000;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.feature:hover {
+    background-color: orange;
+}
+
+.feature_odd {
+    position: relative;
+    margin: 5% auto;
+    max-width: 90%;
+    display: flex;
+}
+.feature_odd::after {
+    position: absolute;
+    content: "01";
+    font-size: 95px;
+    color: #F00;
+    font-weight: bold;
+    top: -7%;
+    right: 5%;
+}
+div:nth-child(4).feature_odd::after {
+    content: "03";
+}
+
+.feature_odd figure {
+    margin-left: 2%;
+    margin-right: 2%;
+    max-width: 50%;
+}
+.feature_odd figure img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 2px #bbb0b0;
+}
+
+.feature_odd_right {
+    background: #fff;
+    border: 3px solid #D09C9C;
+    margin-top: 1.5%;
+    border-radius: 15px;
+    padding: 1% 4% 1% 3%;
+    width: 40%;
+    height: 100%;
+}
+
+.feature_odd_right h2 {
+    margin-right: 30%;
+    text-align: center;
+    margin-top: 2%;
+    color: #D09C9C;
+    font-size: 2rem;
+}
+.menu_content p, ol {
+    font-size: 1.5rem;
+}
+
+.feature_even {
+    position: relative;
+    margin: 5%;
+    max-width: 100%;
+    display:flex;
+    flex-direction: row-reverse;
+}
+.feature_even::after {
+    position: absolute;
+    content: "02";
+    font-size: 95px;
+    color: #F00;
+    font-weight: bold;
+    top: -10%;
+    left: 3%;
+    z-index: 2;
+}
+
+.feature_even figure {
+    margin-left: 2%;
+    margin-right: 2%;
+    max-width: 50%;
+}
+.feature_even figure img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 2px #bbb0b0;
+}
+
+.feature_even_left {
+    background: white;
+    border: 3px solid #D09C9C;
+    margin: 1% 0 2% 2%;
+    border-radius: 15px;
+    width: 40%;
+    height: 100%;
+    z-index: 1;
+    padding: 1% 4% 1% 3%;
+}
+
+.feature_even_left h2 {
+    text-align: center;
+    margin-top: 2%;
+    color: #D09C9C;
+    font-size: 2rem;
+    margin-left: 15%;
+}
+
+.feature_all_btn {
+    background: #a2a2a2;
+    padding: 2%;
+    width: 30%;
+    margin: 5% auto;
+    text-align: center;
+    margin-bottom: 10%;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ccc;
+}
+
+/* -------------- 目的別調理方法 ------------------ */
+.method_type_select > .method_01 figure img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.method_type_select {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 4% 4%;
+}
+
+div.method_type_select > div figure {
+    margin-bottom: 10%;
+    height: 50%;
+}
+
+div.method_type_select > div figure + figcaption {
+    text-align: center;
+    font-weight:bold;
+    font-size: 1.3rem;
+}
+
+div.method_type_select > div figcaption + p {
+    margin: 0 5%;
+}
+
+.cooking_method > p.sales_point {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+} 
+
+.cooking_method > p.sales_point span {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: normal;
+    line-height: 3rem;
+}
+
+.method_01, .cook_help_01 {
+    width: calc(100% /3);
+}
+.cook_help_01 figure {
+    object-fit: cover;
+    width: 80%;
+    height: 73%;
+}
+
+.cooking_method_select  div  p {
+    font-size: 1.25rem;
+    margin-top: -5%;
+}
+
+.cook_help_01 figure > img {
+    max-width: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 100%;
+    border: 5px solid white;
+    box-shadow: 0 0 5px 3px #1f6546;
+}
+
+div.cook_help_01 p {
+    font-size: 1.25rem;
+}
+.method_02 {
+    width: calc(100% /3);
+}
+.method_02 img {
+    border: 2px solid purple;
+    border-radius: 30px;
+    max-width: 80%;
+}
+div.method_type_select > .method_02 p {
+    padding: 3% 5%;
+    line-height: 1.75rem;
+}
+p.chance {
+    color: #000;
+    font-weight: normal;
+}
+
+/* 必要な５大栄養素 */
+.nutrients_select {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 1% 10%;
+}
+.five_nutrients {
+    width: calc(100% /5);
+}
+.five_nutrients figcaption { font-weight: bold; }
+.nutrients_select figure {
+    margin: 2% 20%;
+    height: 80%;
+}
+.five_nutrients > figure > img {
+    width: 100%;
+    border: 1px solid purple;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px purple;
+    height: 80%;
+}
+.video_area {
+    max-width: 90%;
+    height: 500px;
+    margin: 5% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video_tape {
+    width: calc(90% /4);
+    height: 200px;
+    background: #b8b8b8;
+    border-radius: 20px;
+    margin: 2% 4%;
+}
+
+/* お客様の声 */
+.customer_voice {
+    display: flex;
+    background: pink;
+    width: 98%;
+    margin: 1% auto;
+    padding-top: 3%;
+    border-radius: inherit;
+    position: relative;
+}
+
+.customer_voice::before {
+    position: absolute;
+    content: "";
+    background: orange;
+    width: 40px;
+    height: 40px;
+    top: 43%;
+    left: -3.5%;
+    clip-path: polygon(0% 50%, 40px 0%, 40px 40px);
+    z-index: 2;
+}
+
+.customer_voice::after {
+    position: absolute;
+    content: "";
+    background: orange;
+    width: 40px;
+    height: 40px;
+    top: 43%;
+    right: -3.5%;
+    clip-path: polygon(40px 50%, 0% 0%, 0% 40px);
+    z-index: 2;
+}
+
+.customer_voice_outer {
+    width: 75%;
+    background: #ff9eaf;
+    margin: 4% auto;
+    border: 3px solid #ff8298;
+    border-radius: 25px;
+    box-shadow: 3px 3px 10px 1px #ff8298;
+    position: relative;
+}
+
+.customer_voice_outer::before {
+    position: absolute;
+    content: "";
+    border: 5px solid orange;
+    width: 7%;
+    height: 12%;
+    z-index: 1;
+    border-radius: 50%;
+    top: 40%;
+    left: -4%;
+    background-color: #ffecf0;
+}
+
+.customer_voice_outer::after {
+    position: absolute;
+    content: "";
+    border: 5px solid orange;
+    width: 7%;
+    height: 12%;
+    z-index: 1;
+    border-radius: 50%;
+    top: 40%;
+    right: -4%;
+    background-color: #ffecf0;
+}
+
+.customer_picture > figure {
+    margin: 0 10% ;
+}
+.customer_picture > figure > img {
+    width: 326px;
+}
+.right_thanks_word {
+    margin: 1% auto;
+    /* background: #ffefff; */
+    width: 50%;
+    text-align: center;
+}
+
+.customer_voice h3 {
+    font-size: 2.5rem;
+    color: #7553ff;
+}
+.right_thanks_word p {
+    font-size: 1rem;
+}
+
+/* 栄養不足の一例 */
+.method_01.malnutrition > figure + p {
+    margin: -10% 15%;
+    padding: 4% 0%;
+}
+.method_01.malnutrition figure {   
+    height: fit-content;
+    margin-bottom: 2%;
+}
+.method_01.malnutrition figcaption { font-weight: normal;  font-size: 95%;}
+
+.cooking_method > p.sales_point + p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: -2.5%;
+}
+
+
+/* 栄養士 */
+.eiyoshi {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.eiyoshi img { width: 100%; }
+
+.eiyoshi+.feature_all_btn {
+    margin-top: 0px;
+}
+
+/* よくある質問 */
+p.title_point + p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.question_list {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.question_list > div {
+    background: #f1f1f1;
+    padding: 1%;
+    border: 2px solid orange;
+    margin: 2% auto;
+    border-radius: 15px;
+    width: 60%;
+    position: relative;
+}
+
+.question_list > div > p {
+    margin-left: 15%;
+}
+.question_list > div::before {
+    position: absolute;
+    content: "Q";
+    color: #F00;
+    font-size: 2.25rem;
+    top: 12%;
+    left: 4%;
+}
+.question_list > div::after {
+    position: absolute;
+    content: "+";
+    font-size: 1.75rem;
+    color: #9b9090;
+    text-shadow: 2px 2px 1px #bb0303;
+    top: 20%;
+    right: 4%;
+}
+/* ****************** フッターコンテンツ ******************************************** */
+
+footer {
+    width: 100%;
+    height:100px;
+    background:#000;
+}
+
+ul.footer_navi {
+    list-style-type: none;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.footer_navi > li {
+    display: inline-block;
+    margin-right: 5%;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.footer_navi > li:last-child {
+    margin-right: 0;
+}
+
+/* ****************** 料理検索ボタン押下後 ******************************************** */
+.search_recipe_aria_bg {
+    display: none;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(180deg, #2affb9 60%, #d9da00 100%);
+    opacity: 0.8;
+    padding: 2% 0;
+    border-bottom: 3px solid #bcbd02;
+    box-shadow: 0 0px 10px 5px #bfbf05;
+    position:relative;
+    z-index:1;
+}
+
+.search_recipe_aria {
+    width: 50%;
+    height: 80%;
+    /* background: yellow; */
+    margin: 0 auto;
+}
+
+.search_recipe_aria::before {
+    position: absolute;
+    content: "x";
+    font-size: 4rem;
+    top: 10%;
+    right: 12%;
+    background: #b6ffcd;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: #217336;
+    box-shadow: inset 0 0 10px 2px #399350;
+}
+
+.search_recipe_aria > form > input[type="text"] {
+    background: white;
+    width: 90%;
+    padding: 2% 2%;
+    margin: 2% auto 0;
+    display: block;
+    border-color: #097d1d;
+    outline: none;
+    font-size: 1.25rem;
+}
+
+.search_recipe_aria p {
+    margin-top: 0.25%;
+    text-indent: 3%;
+}
+
+.search_recipe_aria table {
+    /* background: rosybrown; */
+    margin-left: 3%;
+    width: 94%;
+    table-layout: fixed;
+}
+.search_recipe_aria table th {
+    text-align: left;
+    font-size: 1.5rem;
+}
+.search_recipe_aria table td {
+    /* background: cyan; */
+    width: 8vw;
+}
+.keyword_btn {
+    background: #fff5c1;
+    margin: 2%;
+    padding: 2% 1%;
+    width: 7vw;
+    border-radius: 10px;
+    border: 3px solid orange;
+    font-weight: bold;
+    text-align: center;
+}
+/* PCのみ改行対応 */
+@media screen and (min-width: 769px) {
+    br.br-sp {
+        display: none;
+    }
+    br.br-pc {
+        display: block;
+    }
+    .sp_nav_btn {
+        display: none;    
+    }
+}
+
+/* スマートフォン対応（390px * 844px） */
+@media (min-width: 390px) and (max-width: 767px) {
+    br.br-sp {
+        display: block;
+    }
+    br.br-pc {
+        display: none;
+    }
+    header.top-header {
+        height: 196vh;
+    }
+    nav.header-top {
+        height: 200vh;
+    } 
+    .recipe_search_btn {
+        top: 2%;
+        right: 22%;
+        width: 40%;
+    }   
+    .recipe_search_btn p {
+        font-size: 95%;
+        padding: 5% 0% 5% 15%;
+    }   
+    .recipe_search_btn p:after {
+        top: 2%;
+        left: 60%;
+    }
+    .sp_nav_btn {
+        position: absolute;
+        top: 2%;
+        right: 2%;
+        content: "";
+        width: 50px;
+        height: 50px;
+        font-weight: bold;
+        font-size: 2.75rem;
+        color: #7b3f03;
+    }
+
+    .top1 > figure + p {
+        top: 30%;
+    }   
+    .top1::before {
+        top: 42%;
+        left: 90%;
+    }
+
+    .first_view_content {
+        width: 95%;
+        display: block;
+    }
+    .first_view_left {
+        width: 100%;
+        margin-bottom: 15%;
+        margin-top:5%;
+    }
+
+    .first_view_row {
+        display: block;
+    }
+
+    .first_view_row > figure {
+        max-width: 95%;
+        margin: 7% auto;
+    }
+    .week_recipe_btn {
+        width: 80%;
+        margin: 2% auto 7%;
+        padding: 5%;
+    }
+
+
+    .side_page {
+        width: 100%;
+    }
+    .side_page h2 {
+        font-size: 1.75rem;
+    }
+    .top1:last-of-type {
+        padding-top: 3%;
+    }
+
+    #main {
+        max-width: 90%;
+        margin-top: 10%;
+    }
+    /* ロゴマークのサイズ調整 */
+    nav.header-top > .logo img {
+        max-width: 70%;
+    }
+    /* ヘッダーナビゲーション（現状非表示） */
+    ul.header_navi {
+        display: none;
+    }
+    nav.header-top > .logo {
+        top: 1%;
+        left: 3%;
+    }
+    header.top-header > div.first_view {
+        width: 90%;
+        top: 9%;
+        left: 4%;
+    }
+    div.todays_appel_title {
+        font-size: 130%;
+        text-align: center;
+    }
+
+    .todays_appel_title p {
+        font-size: 80%;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 5%;
+        text-align: left;
+    }
+    .feature_odd {
+        display: block;
+    }
+    .feature_odd figure {
+        margin-bottom: 15%;
+        max-width: 100%;
+    }
+
+    .feature_odd::after {
+        font-size: 2.75rem;
+        top: 33.5%;
+        right: 78%;
+    }
+
+    .feature_odd_right {
+        width: 90%;
+    }
+    .feature_odd_right h2 {
+        margin-right: 0;
+        text-align: center;
+        font-size: 1.75rem;
+    }
+
+    p.title_point {
+        font-size: 1.25rem;
+    }    
+    p.title_point span {
+        font-size: 1.75rem;
+    }
+    .menu_content p {
+        font-size: 1.2rem;
+        margin-left: 3%;
+    }
+    .menu_content ol {
+        font-size: 1.2rem;
+    }
+    .feature_even {
+        margin: 10% auto;
+        max-width: 95%;
+        display: block;
+    }
+    .feature_even figure { 
+        margin-bottom: 15%;  
+        max-width: 100%;
+    }    
+    .feature_even::after {
+        font-size: 2.5rem;
+        top: 47%;
+        left: 5%;
+    }   
+    .feature_even_left {
+        margin: 2% auto;
+        width: 90%;
+        padding: 2%;
+    }
+    .feature_even_left h2 {
+        text-align: center;
+        font-size: 1.75rem;
+        margin-left: 0;
+    }
+    div:nth-child(4).feature_odd::after {
+        top: 34%;
+    }    
+    .feature_all_btn { 
+        padding: 5%;
+        width: 80%;
+    }
+    .method_type_select {
+        display: block;
+        padding: 0;
+    }    
+    div.method_type_select > div figure {
+        margin: 5% auto 2%;
+    }
+    div.method_01, .cook_help_01 {
+       width: 100%;
+    }
+    div.method_type_select > div figcaption + p {
+        margin: 2% auto;
+    }
+    .cooking_method > p.sales_point {
+        font-size: 1.25rem;
+      
+    }
+    .cooking_method > p.sales_point span {
+        font-size: 1rem;
+        line-height: 0;
+    }
+    .method_02 {
+        width: 100%;
+    }
+    .cooking_method > p.sales_point + p {
+        font-size: 1rem;
+    }
+
+    .cook_help_01 figure > img {
+        max-width: 70%;
+        height: 46vw;
+    }
+
+
+    .nutrients_select {       
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .five_nutrients {
+        width: calc(100% /3);
+        margin-bottom: 8%;
+    }
+    .video_area {
+        max-width: 90%;
+        display: block;
+        height: auto;
+        margin-bottom: 12%;
+    }    
+    .video_tape {
+        width: 100%;
+        margin: 4% auto;
+    }
+    /* JavaScriptで動作する項目にするため、2番目以降は非表示 */
+    .video_tape:nth-of-type(n+2) {
+        display: none;
+    }
+
+    .customer_voice_outer {
+        margin: 4% auto 10%;
+    }
+
+
+    .customer_voice {
+        display: block;
+        max-width: 100%;
+    }
+    .customer_picture > figure > img {
+        max-width: 100%;
+    }
+    .customer_voice_outer::before {
+        width: 20%;
+        height: 10%;
+        top: 40.5%;
+        left: -12%;
+    }
+    .customer_voice::before {
+        width: 30px;
+        height: 30px;
+        top: 43.5%;
+        left: -8%;
+        clip-path: polygon(0% 50%, 30px 0%, 30px 30px);
+    }  
+    .customer_voice_outer::after {
+        width: 20%;
+        height: 10%;
+        top: 40.5%;
+        right: -12%;
+    }
+    .customer_voice::after {
+        width: 30px;
+        height: 30px;
+        top: 43.5%;
+        right: -9%;
+        clip-path: polygon(30px 50%, 0% 0%, 0% 30px);
+    }
+    .right_thanks_word {
+        margin: 1% auto;
+        /* background: #ffefff; */
+        width: 90%;
+        text-align: center;
+    }
+    .right_thanks_word p {
+        font-size: 0.75rem;
+        margin-bottom: 0;
+        padding-bottom: 5%;
+    }
+    .customer_voice h3 {
+        font-size: 1.5rem;
+        color: #7553ff;
+        margin-top: 1%;
+        margin-bottom: 0;
+    }    
+    .eiyoshi {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .eiyoshi > figure {
+        margin: 10% 0;
+    }
+    .question_list > div {
+        width: 100%;
+        margin-bottom: 7.5%;
+    }
+    .question_list > div > p {
+        margin-left: 15%;
+        width: 75%;
+    } 
+    .question_list > div::before {
+        font-size: 2rem;
+        top: 18%;
+    }
+    .question_list > div::after {
+        font-size: 2rem;
+    }
+    ul.footer_navi {
+        padding-top: 30px;
+        margin-right: 0;
+        padding-left: 0;
+    }  
+    .footer_navi > li:nth-of-type(3), 
+    .footer_navi > li:last-child {
+        margin-right: 0;
+    }
+}
