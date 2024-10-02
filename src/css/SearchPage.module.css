@@ -44,26 +44,35 @@ header.lower-header {
     box-shadow: 0px 0 10px 7px #1b6144;
 }
 /* #root > div > nav > ul > li:nth-child(1) */
-header.lower-header nav > ul {
-    color: #FFF;
+header.lower-header nav > ul { 
     font-weight: bold;
     position: absolute;
     top: 20%;
     left: 12%;
-    text-shadow: 0 0 10px black;
+    z-index:2;
 }
 
 header.lower-header nav ul li, footer nav li {
     display: inline-block;
     list-style-type: none;
     margin: 0 20px;
-    font-size: 20px;
+    font-size: 1.6rem;
 }
 header.lower-header nav li:first-child, footer nav li:first-child {
     margin-left: 0;
 }
 header.lower-header nav li:last-child, footer nav li:first-child {
     margin-right: 0;
+}
+
+header.lower-header nav > ul > li > a {
+    color: #FFF;
+    text-decoration: none;
+    text-shadow: 2px 2px 10px black;
+}
+
+header.lower-header nav > ul > li > a:hover {
+    color: #F00;
 }
 
 div.btn-blue {

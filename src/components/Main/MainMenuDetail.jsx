@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import RecipeDetailModule from "../../css/RecipeDetail.module.css";
 
+
 export const MainMenuDetail = () => {
+    const setnums = ["カルシウム", "鉄分", "魚介料理", "和食"];
+   
+    const numList = setnums.map((setnum, index) => (
+        <div key={index}>{setnum}</div>
+    ));
+
     return (
         <>
         <div id ={RecipeDetailModule.main}>                
             <figure>
-                <img src="./images/v149_48.png" alt="料理画像" width="100%" />
+                <img src="./images/search_result_image_01.png" alt="料理画像" />
             </figure>
             <figcaption className={RecipeDetailModule.picup_figcaption}>カルシウム満点！&emsp;美味しい小魚</figcaption>
             <div className={RecipeDetailModule.type_tag}>
@@ -83,7 +90,7 @@ export const MainMenuDetail = () => {
                     </div>
                     <div className={RecipeDetailModule.charange_image}>
                         <div className={RecipeDetailModule.review_number}>レビュー&emsp;&#40;1件&#41;</div>
-                        <figure></figure>
+                        <img src="./images/search_result_image_02.png" width="100%" alt="作ってみた" />
                     </div>
                 </div>
                 <div className={RecipeDetailModule.recipe_post}>

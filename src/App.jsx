@@ -10,7 +10,7 @@ import './App.css';
 export const App = () => {
   return (
     <>
-      <Router basename="/">
+      <Router basename="/nutrient_search">
         <div className="wapper">
           <Routes>
             <Route exact path="/" element = { <NutrientTop /> } />
@@ -22,3 +22,4 @@ export const App = () => {
     </>
   );
 }
+

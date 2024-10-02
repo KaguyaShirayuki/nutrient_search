@@ -1,9 +1,13 @@
 import React from 'react';
 import TopModule from "../../css/Top.module.css";
 
+import { Reveal } from "react-genie";
+import { Animation } from "react-genie-styled-components";
+
 export const Faq = () => {
     return (
         <>
+        <Reveal animation={Animation.FadeInUp}>
         <div className={TopModule.cooking_method} id="faq">
             <p className={TopModule.title_point}>FAQ<br /><span>よくある質問</span></p>
             <p>申し込みを検討いただくお客様から寄せられる質問をご紹介しています。<br />その他の質問はこちらからご参照ください。</p>
@@ -18,6 +22,7 @@ export const Faq = () => {
                 詳細情報準備中
             </div>
         </div>
+        </Reveal>
         </>
     )
 }

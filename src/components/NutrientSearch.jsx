@@ -21,8 +21,7 @@ export const NutrientSearch = () => {
                 <ResultData />
                 <SideContent />
             </div>
-        </div>
-        <Footer />         
+        </div>       
         </>
     )
 }

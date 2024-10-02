@@ -80,7 +80,8 @@ ul.header_navi {
     width: 140%;
 }
 
-ul.header_navi > li {
+ul.header_navi > li ,
+ul.footer_navi > li {
     display: inline-block;
     margin-right: 5%;
     font-size: 110%;
@@ -90,11 +91,13 @@ ul.header_navi > li {
 ul.header_navi > li a {
     text-decoration: none;
     color: #FFF;
-    font-size: 150%;    
+    font-size: 150%;   
 }
 
-ul.header_navi > li a:hover {
+ul.header_navi > li a:hover,
+ul.footer_navi > li a:hover {
     color: #F00;
+    cursor: pointer;
 }
 
 /* ファーストビューコンテンツ */
@@ -300,10 +303,6 @@ p.title_point span {
     color: #000;
     font-weight: bold;
     font-size: 2.5rem;
-}
-
-.feature:hover {
-    background-color: orange;
 }
 
 .feature_odd {

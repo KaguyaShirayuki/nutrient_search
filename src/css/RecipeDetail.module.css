@@ -35,7 +35,7 @@ header.lower-header nav > ul {
     position: absolute;
     top: 20%;
     left: 12%;
-    text-shadow: 0 0 10px black;
+    /* text-shadow: 0 0 10px black; */
 }
 
 header.lower-header nav li, footer nav li {
@@ -44,6 +44,10 @@ header.lower-header nav li, footer nav li {
     margin: 0 20px;
     font-size: 20px;
 }
+header.lower-header nav > ul > li > a {
+    text-decoration: none;
+}
+
 header.lower-header nav li:first-child, footer nav li:first-child {
     margin-left: 0;
 }
@@ -91,6 +95,9 @@ div.btn-blue::before {
     /* background-color: #6f87ff; */
     height: 50%;
     width: 70%;
+}
+#main figure {
+    text-align: center;
 }
 
 #main  figure img {

@@ -17,11 +17,11 @@ export const SideThreeContent = () => {
                 <div className={RecipeDetailModule.reco_header}>おすすめレシピ</div>
                 <div className={RecipeDetailModule.reco_picture_feild}>
                     <div className={RecipeDetailModule.reco_figure}>
-                        <figure></figure>
+                        <figure><img src="./images/side_thumbnail_01.png" /></figure>
                         <figcaption>サーモンソテー</figcaption>
                     </div>
                     <div className={RecipeDetailModule.reco_figure}>
-                        <figure></figure>
+                        <figure><img src="./images/side_thumbnail_02.png" /></figure>
                         <figcaption>ステーキ</figcaption>
                     </div>
                 </div>

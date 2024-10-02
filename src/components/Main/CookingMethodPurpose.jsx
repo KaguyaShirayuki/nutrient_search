@@ -1,10 +1,15 @@
 import React from 'react';
 import TopModule from "../../css/Top.module.css";
 
+import { Reveal } from "react-genie";
+import { Animation } from "react-genie-styled-components";
+
+
 export const CookingMethodPurpose = () => {
     return(
         <>
-        <div className={TopModule.cooking_method} id={TopModule.purpose}>
+        <Reveal animation={Animation.SlideInLeft} delay={500}>
+        <div className={TopModule.cooking_method} id="purpose">
             <p className={TopModule["title_point"]}>Cooking method by purpose<br /><span className={TopModule.pikup_title}>目的別調理方法</span></p>
             <div className={TopModule.method_type_select}>
                 <div className={TopModule.method_01}>
@@ -33,6 +38,7 @@ export const CookingMethodPurpose = () => {
                 詳細な内容はこちら！
             </div>
         </div>
+        </Reveal>
         </>
     )
 }

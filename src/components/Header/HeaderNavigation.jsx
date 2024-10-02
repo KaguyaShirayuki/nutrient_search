@@ -1,5 +1,6 @@
 import React from 'react';
 import TopModule from "../../css/Top.module.css";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export const HeaderNavigation = () => {
     return(
@@ -10,11 +11,46 @@ export const HeaderNavigation = () => {
             </div>
             <div className={TopModule["navigation-menu"]}>
                 <ul className={TopModule.header_navi}>
-                    <li><a href="#feature">サービスの特徴</a></li>
-                    <li><a href="#purpose">目的別調理法</a></li>
-                    <li><a href="#nutrients">5大栄養素</a></li>
-                    <li><a href="#lecture">プロ栄養士</a></li>
-                    <li><a href="#faq">よくある質問</a></li>
+                    <li><Link 
+                        activeClass="active"
+                        to="feature"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >サービスの特徴</Link></li>
+                    <li><Link 
+                        activeClass="active"
+                        to="purpose"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >目的別調理法</Link></li>
+                    <li><Link 
+                        activeClass="active"
+                        to="nutrients"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >5大栄養素</Link></li>
+                    <li><Link 
+                        activeClass="active"
+                        to="lecture"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >プロ栄養士</Link></li>
+                    <li><Link 
+                        activeClass="active"
+                        to="faq"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >よくある質問</Link></li>
                 </ul>
             </div>
             <div className={TopModule.recipe_search_btn}>

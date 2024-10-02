@@ -6,23 +6,29 @@ export const ResultData = () => {
     // 1. 写真の配列
     let imageLists = [];
     for(let i = 1; i < 6 ; i++) {
-        imageLists += `search_result_image_0${i}.png`;
+        imageLists += `./images/search_result_image_0${i}.png`;
     }
     console.log(imageLists);
+
+    /*
+    images = ["./images/best1.png","./images/best2.png","./images/best3.png"];
+    while(image < image.length) {
+    }
+     $this->all();
+
+    food[menu.food] --- image1.png */
 
     // 2. 栄養タグの配列
     const setNutrientTags = ["カルシウム", "鉄分", "魚介料理", "和食"];
 
-
     // 3. 多重配列で加工します。
-    // const resultDatas = [setNutrientTags, imageLists];
+    const setResultDatas = [setNutrientTags, imageLists];
+    // console.log(setResultDatas);     
 
-    // 栄養素タグをmap関数で付与
-    
-    const nutListTag = setNutrientTags.map((nutrientTag, index) => (
+    // 栄養素タグをmap関数で付与    
+    const nutListTag = setNutrientTags.map((nutrientTag, index) => (   
         <div key={index} className={SearchPageModule["tag-bg"]}>{nutrientTag}</div>
-    ));    
-    
+    )); 
 
     return (
         <>
@@ -36,7 +42,7 @@ export const ResultData = () => {
                     <div>
                         <div className={SearchPageModule["tag-group"]}>
                             {nutListTag}
-                        </div>                            
+                        </div>
                         <div className={SearchPageModule["user-name"]}>
                             <div className={SearchPageModule["user-icon"]}></div>
                             <p className={SearchPageModule["user-myname"]}>御稲荷 和沙</p>

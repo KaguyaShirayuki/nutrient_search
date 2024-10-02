@@ -1,9 +1,13 @@
 import React from 'react';
 import TopModule from "../../css/Top.module.css";
 
+import { Reveal } from "react-genie";
+import { Animation } from "react-genie-styled-components";
+
 export const HowStartCooking = () => {
     return (
         <>
+        <Reveal animation={Animation.SlideInLeft} delay={500}>
         <div className={TopModule.cooking_method}>
             <p className={`${TopModule.sales_point} ${TopModule.chance}`}>栄養を意識した料理生活を始めよう<br /><span>料理を始めるきっかけ</span></p>
             <div className={TopModule.method_type_select}>
@@ -33,6 +37,7 @@ export const HowStartCooking = () => {
                 もっと詳しく
             </div>
         </div>
+        </Reveal>
         </>
     )
 }

@@ -1,9 +1,13 @@
 import React from 'react';
 import TopModule from "../../css/Top.module.css";
 
+import { Reveal } from "react-genie";
+import { Animation } from "react-genie-styled-components";
+
 export const ExampleMalnutrition = () => {
     return(
         <>
+        <Reveal animation={Animation.SlideInRight} delay={500}>
         <div className={TopModule.cooking_method}>
             <p className={TopModule.sales_point}>栄養不足の一例</p>
             <p>体験に基づいた栄養のエピソードをご紹介します。<br />きっとあなたのお役に立つでしょう。</p>
@@ -31,6 +35,7 @@ export const ExampleMalnutrition = () => {
                 栄養不足の一例を詳しく！
             </div>
         </div>
+        </Reveal>
         </>
     )
 }

@@ -1,9 +1,13 @@
 import React from 'react';
 import TopModule from "../../css/Top.module.css";
 
+import { Reveal } from "react-genie";
+import { Animation } from "react-genie-styled-components";
+
 export const ProblemThatSolved = () => {
     return (
         <>
+        <Reveal animation={Animation.FadeInUp} delay={500}>
         <div className={TopModule.cooking_method}>
             <p className={TopModule.sales_point}>解決できるお悩み<br /><span>自炊や料理を始めるうえでこのようなお悩みの方におすすめです</span></p>
             <div className={TopModule.method_type_select}>
@@ -48,6 +52,7 @@ export const ProblemThatSolved = () => {
                 詳細な内容はこちら！
             </div>
         </div>
+        </Reveal>
         </>
     )
 }

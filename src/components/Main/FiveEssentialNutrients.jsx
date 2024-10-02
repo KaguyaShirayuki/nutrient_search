@@ -1,9 +1,13 @@
 import React from 'react';
 import TopModule from "../../css/Top.module.css";
 
+import { Reveal } from "react-genie";
+import { Animation } from "react-genie-styled-components";
+
 export const FiveEssentialNutrients = () => {
     return(
         <>
+        <Reveal animation={Animation.SlideInLeft} delay={500}>
         <div className={TopModule.cooking_method} id="nutrients">
             <p className={TopModule.sales_point}>必須な5大栄養素</p>
             <p>目的にあった栄養素、レシピを掲載！<br />あなたの不足している栄養を簡単に対策できます。</p>
@@ -51,6 +55,7 @@ export const FiveEssentialNutrients = () => {
                 栄養についてもっと詳しく
             </div>
         </div>
+        </Reveal>
         </>
     )
 }

@@ -10,14 +10,17 @@ import { ExampleMalnutrition } from "./ExampleMalnutrition";
 import { NutritionistLecture } from "./NutritionistLecture";
 import { Faq } from "./Faq";
 
+import { ReactGenieAnimations } from "react-genie-styled-components";
+
 import TopModule from "../../css/Top.module.css";
 
 
 export const Main = () => {
    return (
     <>
-        <div id={TopModule.main}>      
-            <Feature />
+        <div id={TopModule.main}>
+            <ReactGenieAnimations />
+            <Feature />           
             <CookingMethodPurpose />
             <ProblemThatSolved />
             <HowStartCooking />

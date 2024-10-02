@@ -1,12 +1,16 @@
 import React from 'react';
 import TopModule from "../../css/Top.module.css";
 
+import { Reveal } from "react-genie";
+import { Animation } from "react-genie-styled-components";
+
 export const Feature = () => {
 
     // const {scrollFadeIn, setScrollFadeIn} = useState([]);
 
     return (
         <>
+        <Reveal animation={Animation.FadeInUp} delay={500}>
         <div className={TopModule.feature} id="feature">
             <div className={TopModule.main_title_header}>
                 <p className={TopModule.title_point}>FEATURE<br /><span className={TopModule.pikup_title}>サービスの特徴</span></p>
@@ -69,6 +73,7 @@ export const Feature = () => {
                 サービスの詳しい内容
             </div>
         </div>
+        </Reveal>
         </>
     )
 }

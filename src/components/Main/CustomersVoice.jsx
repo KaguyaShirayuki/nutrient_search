@@ -1,9 +1,13 @@
 import React from 'react';
 import TopModule from "../../css/Top.module.css";
 
+import { Reveal } from "react-genie";
+import { Animation } from "react-genie-styled-components";
+
 export const CustomersVoice = () => {
     return(
         <>
+        <Reveal animation={Animation.FadeIn}>
         <div className={TopModule.cooking_method}>
             <p className={TopModule.title_point}>customer's voice<br /><span>お客様の声</span></p>
             <div className={TopModule.customer_voice_outer}>
@@ -21,6 +25,7 @@ export const CustomersVoice = () => {
                 お客様の声一覧はこちら
             </div>
         </div>
+        </Reveal>
         </>
     )
 }
